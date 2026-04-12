@@ -1,2 +1,2 @@
-# Pearfection-Fabric
+# Pearfection-Neoforge
  Pears for minecraft.
