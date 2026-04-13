@@ -39,8 +39,6 @@ public class Pearfection {
 
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (Pearfection) to respond directly to events.
-        // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
-        NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
@@ -79,22 +77,5 @@ public class Pearfection {
         }
 
     }
-
-}
-
-        // You can use SubscribeEvent and let the Event Bus discover methods to call
-        @SubscribeEvent
-        public void onServerStarting(ServerStartingEvent event) {
-
-        }
-
-        @EventBusSubscriber(modid = MOD_ID, value = Dist.CLIENT)
-        public static class ClientModEvents {
-            @SubscribeEvent
-            public static void onClientSetup(FMLClientSetupEvent event)
-            {
-
-            }
-        }
 
 }
