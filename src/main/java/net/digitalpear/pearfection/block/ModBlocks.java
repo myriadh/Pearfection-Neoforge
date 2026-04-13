@@ -21,7 +21,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> CALLERY_PLANKS = registerBlock("callery_planks",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.WOOD)));
-    public static final DeferredBlock<Block> CALLERY_LOG = registerBlock("callery_log",
+    public static final DeferredBlock<Block> CALLERY_STEM = registerBlock("callery_stem",
             () -> new Block(BlockBehaviour.Properties.of()));
     public static final DeferredBlock<Block> CALLERY_WOOD = registerBlock("callery_wood",
             () -> new Block(BlockBehaviour.Properties.of()
